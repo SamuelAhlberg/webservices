@@ -1,0 +1,1 @@
+const APINyckel= "4b780ecaac3c30fefa5995543355bb44"

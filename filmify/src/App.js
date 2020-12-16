@@ -2,13 +2,16 @@ import React from "react";
 import "./App.css";
 import Row from "./Row";
 import requests from "./requests";
+import Nav from "./Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>mama</h1>
+      <Nav/>
+      
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Popular" fetchUrl={requests.fetchPopular} />
+
     </div>
   );
 }

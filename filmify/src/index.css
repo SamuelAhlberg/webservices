@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 180px;
 }
 
 .row {
@@ -18,6 +17,17 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.img {
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(https://thefemalegazers.files.wordpress.com/2018/08/coming-of-age-film.jpg);
+}
+
 .row h2 {
   margin-top: 20px;
   margin-left: 20px;
@@ -26,15 +36,15 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 .navfalse {
-  margin: 0px;
-  width: 100%;
   top: 0;
-  left: 0;
   z-index: 1;
-  position: fixed;
-  display: flex;
-  background-color: rgb(119, 230, 152);
+  position: sticky;
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Nav.css";
-import SearchMovie from "./SearchMovie";
 
 function Nav() {
   const [show, handleShow] = useState(false);
@@ -24,8 +23,7 @@ function Nav() {
         alt="Search Logo"
       />
 
-      {/* Antingen får den vara här så den hamnar i Nav eller som egen grej högst upp på sidan. Kan tas bort från App.js */}
-      <SearchMovie></SearchMovie>
+      {/* Antingen får den vara här så den hamnar i Nav eller som egen grej högst upp på sidan. Kan tas bort från App.js */}     
     </div>
   );
 }

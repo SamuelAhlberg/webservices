@@ -4,6 +4,7 @@ import "./Row.css";
 import ReactDOM from 'react-dom';
 import Nav from "./Nav";
 import requests from "./requests";
+import SearchMovie from "./SearchMovie";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -36,14 +37,21 @@ function Row({ title, fetchUrl }) {
         Tillbaka
       </button>
       
-      <div class="movie_info">
-        
-          <div class="image_box"><img src={`${base_url}${movie_img}`} alt={movie.name} class="movie_img"></img></div>
-          <div class="info_box">
-          <div class="movie_title">{title}</div>
-          <div class="movie_description">{description}</div> 
+      <div class="row">
+        <div class="col-sm">
+          <div class="movie_info">
+            
+              <div class="image_box"><img src={`${base_url}${movie_img}`} alt={movie.name} class="movie_img"></img></div>
+              <div class="info_box">
+              <div class="movie_title">{title}</div>
+              <div class="movie_description">{description}</div>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-sm">
+            <div class="spotify_box"></div>
+          </div>
+      </div>
     </div>
     , document.getElementById('root')
     );
@@ -71,7 +79,7 @@ function App(){
   ReactDOM.render(
     <div className="App">
       <Nav/>
-      
+      <SearchMovie/>
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Popular" fetchUrl={requests.fetchPopular} />
 

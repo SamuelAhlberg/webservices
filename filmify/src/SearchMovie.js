@@ -42,10 +42,15 @@ class SearchMovie extends React.Component {
   
   }
   searchChangeHandler(event){
-    console.log(event.target.value)
-    const boundObject = this
-    const searchTerm = event.target.value
-    boundObject.performSearch(searchTerm)
+    console.log(event.target.value);
+    const boundObject = this;
+    const searchTerm = event.target.value;
+    if(searchTerm !== ''){
+      boundObject.performSearch(searchTerm)
+    }else{
+      boundObject.performSearch("disfdsldssfdskflsdkflsdkfsdankjsdjasdjsakdja");
+    };
+  
     
   }
 
@@ -61,7 +66,7 @@ class SearchMovie extends React.Component {
           paddingBottom: 8,
           paddingLeft: 16,
          
-        }} onChange = {this.searchChangeHandler.bind(this)}placeholder="Enter movie search"/>
+        }} onChange = {this.searchChangeHandler.bind(this)}placeholder="Enter movie search" id="search_movie"/> 
 
         {this.state.rows}
         </div>

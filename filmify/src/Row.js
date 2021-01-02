@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "./axios";
 import "./Row.css";
 import ReactDOM from 'react-dom';
-import Nav from "./Nav";
 import requests from "./requests";
 import SearchMovie from "./SearchMovie";
 
@@ -22,17 +21,16 @@ function Row({ title, fetchUrl }) {
 
   console.table(movies);
 //Här har vi vår clickHandler, detta ska skicka oss till en ny sida. Hitta funktion för detta.
-  const handleClick = (movie) => {
+  function handleClick (movie){
     //
     
     var title = movie.title
-    const movie_id = movie.id;
     var movie_img = movie.poster_path;
     var description = movie.overview;
 
     //Visar filmen som har klickats på
     ReactDOM.render (
-    <div><Nav/>
+    <div><SearchMovie title = "Search Movie" />
       <button onClick={() => App()} class="tillbaka">
         Tillbaka
       </button>
@@ -78,8 +76,7 @@ function Row({ title, fetchUrl }) {
 function App(){
   ReactDOM.render(
     <div className="App">
-      <Nav/>
-      <SearchMovie/>
+      <SearchMovie title = "Search Movie" />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Popular" fetchUrl={requests.fetchPopular} />
 

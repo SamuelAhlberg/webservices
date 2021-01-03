@@ -1,4 +1,5 @@
 import React from 'react';
+import './SpotifyTrack.css'
 
 class SpotifyTrack extends React.Component{
 
@@ -9,15 +10,20 @@ class SpotifyTrack extends React.Component{
 
     }
 
-    addTrack(e){
+    addTrack(){
         this.props.onAdd(this.props.track);
     }
-    removeTrack(e){
+    removeTrack(){
         this.props.onRemove(this.props.track);
     }
-    showAction(){
-        return this.props.isRemoval ? <button onClick = {this.removeTrack}
-        className={"Track-action"}>-</button> : <button onClick={this.addTrack} className={"Track-action"}>+</button>;
+    renderAction(){
+        if(this.props.isRemoval){
+            return <button className = "Track-action" onClick ={this.removeTrack}>-</button>
+        }else{
+            return <button className= "Track-action" onClick = {this.addTrack}>+</button>
+        }
+     /*   return this.props.isRemoval ? <button onClick = {this.removeTrack}
+        className={"Track-action"}>-</button> : <button onClick={this.addTrack} className={"Track-action"}>+</button>;*/
     }
 
     render() {
@@ -27,7 +33,7 @@ class SpotifyTrack extends React.Component{
                     <h3>{this.props.track.name}</h3>
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                 </div>
-                {this.showAction()}
+                {this.renderAction()}
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import React from 'react';
-import SpotifyTrackList from './SpotifyTrackList'
+import SpotifyTrackList from '../SpotifyTrackList/SpotifyTrackList'
+import './SpotifySearchResult.css'
 
 class SpotifySearchResult extends React.Component{
 

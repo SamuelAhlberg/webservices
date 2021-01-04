@@ -26,7 +26,7 @@ function Row({ title, fetchUrl }) {
     //
     
     var title = movie.title
-    const movie_id = movie.id;
+    //const movie_id = movie.id;
     var movie_img = movie.poster_path;
     var description = movie.overview;
 

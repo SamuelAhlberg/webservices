@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Row from "./Row";
 import requests from "./requests";
 import Nav from "./Nav";
 
 import SearchMovie from "./SearchMovie";
+import SpotifyApp from './SpotifyComponents/SpotifyApp/SpotifyApp';
 
 
-class App extends Component {
+class App extends React.Component {
+  
+
 
 
   render() {
@@ -17,6 +20,7 @@ class App extends Component {
       <SearchMovie title = "Search Movie" />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Popular" fetchUrl={requests.fetchPopular} />
+      <SpotifyApp/>
 
       </div>
     )

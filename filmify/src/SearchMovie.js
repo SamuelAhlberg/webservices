@@ -1,5 +1,4 @@
 import React, {  } from "react";
-import "./SearchMovie.css";
 import $ from 'jquery';
 import SearchBar from './SearchBar.js'
 

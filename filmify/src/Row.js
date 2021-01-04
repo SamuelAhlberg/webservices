@@ -4,6 +4,7 @@ import "./Row.css";
 import ReactDOM from 'react-dom';
 import requests from "./requests";
 import SearchMovie from "./SearchMovie";
+import SpotifyApp from './SpotifyComponents/SpotifyApp/SpotifyApp';
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -47,7 +48,7 @@ function Row({ title, fetchUrl }) {
             </div>
           </div>
           <div class="col-sm">
-            <div class="spotify_box"></div>
+            <div class="spotify_box"><SpotifyApp/></div>
           </div>
       </div>
     </div>

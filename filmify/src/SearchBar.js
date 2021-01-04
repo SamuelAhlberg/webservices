@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import requests from "./requests";
 import SearchMovie from "./SearchMovie";
 import Row from "./Row";
+import SpotifyApp from './SpotifyComponents/SpotifyApp/SpotifyApp';
 
 var base_url = "https://www.themoviedb.org/movie/";
 
@@ -61,7 +62,7 @@ function handleClick(movie) {
           </div>
         </div>
         <div class="col-sm">
-          <div class="spotify_box"></div>
+          <div class="spotify_box"><SpotifyApp/></div>
         </div>
     </div>
   </div>

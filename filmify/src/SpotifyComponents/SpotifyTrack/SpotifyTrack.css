@@ -27,11 +27,13 @@
 }
 
 .Track-information h3 {
+  margin-top: 0.2rem;
   margin-bottom: 0.22rem;
+  font-size: 0.52rem;
 }
 
 .Track-information p {
-  font-size: 0.83rem;
+  font-size: 0.48rem;
   font-weight: 300;
   color: rgba(256, 256, 256, 0.8);
 }

@@ -6,6 +6,9 @@ import SpotifySearchResult from "../SpotifySearchResult/SpotifySearchResult";
 import './SpotifyApp.css'
 
 
+
+
+
 class SpotifyApp extends React.Component{
 
     constructor(props) {
@@ -61,7 +64,7 @@ class SpotifyApp extends React.Component{
     render() {
       return (
           <div>
-            <h1>Filmify</h1>
+            
             <div className="App">
               <SpotifySearchBar onSearch={this.search} />
               <div className="App-playlist">

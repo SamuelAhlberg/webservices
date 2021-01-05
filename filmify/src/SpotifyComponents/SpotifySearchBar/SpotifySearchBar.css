@@ -14,7 +14,8 @@
   margin-bottom: 2.22rem;
   color: #010c3f;
   text-align: center;
-  font-size: 2rem;
+  font-size: 0.8rem;
+  background-color: lightgray;
 }
 
 .SearchBar input:focus {

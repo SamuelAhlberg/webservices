@@ -62,7 +62,7 @@ function handleClick(movie) {
           </div>
         </div>
         <div class="col-sm">
-          <div class="spotify_box"><SpotifyApp/></div>
+          <div class="spotify_box"><SpotifyApp  />{title} </div>
         </div>
     </div>
   </div>

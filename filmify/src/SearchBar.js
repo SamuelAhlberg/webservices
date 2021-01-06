@@ -6,6 +6,7 @@ import SearchMovie from "./SearchMovie";
 import Row from "./Row";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import "./index.css";
+import Header from "./Header";
 
 var base_url = "https://www.themoviedb.org/movie/";
 
@@ -54,6 +55,7 @@ function handleClick(movie) {
   //Visar filmen som har klickats på
   ReactDOM.render(
     <div>
+      <Header></Header>
       <SearchMovie title="Search Movie" />
       <button onClick={() => App()} class="tillbaka">
         Tillbaka

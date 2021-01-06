@@ -73,7 +73,7 @@ code {
 }
 
 .search_bar input {
-  background-color: antiquewhite;
+  background-color: rgb(221, 218, 213);
   display: flex;
 
   border-radius: 8px;

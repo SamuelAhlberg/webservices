@@ -33,6 +33,7 @@ function Row({ title, fetchUrl }) {
     //Visar filmen som har klickats på
     ReactDOM.render(
       <div>
+        <Header></Header>
         <SearchMovie title="Search Movie" />
         <button onClick={() => App()} class="tillbaka">
           Back

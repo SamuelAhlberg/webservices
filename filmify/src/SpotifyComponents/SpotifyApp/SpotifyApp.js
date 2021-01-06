@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../Header";
 import Spotify from "../../SpotifyUtil/Spotify";
 import SpotifyPlaylist from "../SpotifyPlaylist/SpotifyPlaylist";
 import SpotifySearchBar from "../SpotifySearchBar/SpotifySearchBar";
@@ -62,6 +63,7 @@ class SpotifyApp extends React.Component {
     return (
       <div>
         <div className="App">
+          <Header></Header>
           <SpotifySearchBar onSearch={this.search} />
           <div className="App-playlist">
             <SpotifySearchResult

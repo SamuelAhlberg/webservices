@@ -18,7 +18,7 @@ body {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.img {
+/* .img {
   margin: 0;
   top: 0;
   left: 0;
@@ -27,7 +27,7 @@ body {
   background-size: 100% 100%;
   background-position: center;
   background-image: url(https://thefemalegazers.files.wordpress.com/2018/08/coming-of-age-film.jpg);
-}
+} */
 
 .row h2 {
   margin-top: 20px;
@@ -74,7 +74,27 @@ code {
 
 .search_bar input {
   background-color: antiquewhite;
+  display: flex;
+
+  border-radius: 8px;
 }
 .movie_info {
   color: antiquewhite;
+}
+
+.movie_info input {
+  background-color: antiquewhite;
+  cursor: pointer;
+  width: 70px;
+  margin-top: 12px;
+  border-radius: 8px;
+}
+
+.movie_info p {
+  font-weight: bold;
+}
+
+.movie_info div {
+  display: flex;
+  flex-direction: column;
 }

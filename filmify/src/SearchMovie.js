@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 import SearchBar from "./SearchBar.js";
+import "./index.css";
 
 class SearchMovie extends React.Component {
   constructor(props) {
@@ -58,10 +59,12 @@ class SearchMovie extends React.Component {
           style={{
             fontSize: 24,
             display: "block",
-            width: "100%",
+            width: "97.5%",
             paddingTop: 8,
             paddingBottom: 8,
             paddingLeft: 16,
+            marginLeft: 20,
+            marginRight: 20,
           }}
           onChange={this.searchChangeHandler.bind(this)}
           placeholder="Enter movie search"

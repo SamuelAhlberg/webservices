@@ -5,6 +5,7 @@ import requests from "./requests";
 import SearchMovie from "./SearchMovie";
 import Row from "./Row";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
+import "./index.css";
 
 var base_url = "https://www.themoviedb.org/movie/";
 
@@ -26,13 +27,17 @@ class SearchBar extends React.Component {
               ></img>
             </td>
             <td className="movie_info">
-              {this.props.movie.title}
-              <p>{this.props.movie.overview}</p>
-              <input
-                type="button"
-                onClick={() => handleClick(this.props.movie)}
-                value="View"
-              />
+              <div>
+                <p>{this.props.movie.title}</p>
+                {this.props.movie.overview}
+
+                <input
+                  className="viewButton"
+                  type="button"
+                  onClick={() => handleClick(this.props.movie)}
+                  value="View"
+                />
+              </div>
             </td>
           </tr>
         </tbody>

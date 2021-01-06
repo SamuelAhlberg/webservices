@@ -19,11 +19,11 @@ function Nav() {
     <div className={`nav${show && "nav_black"}`}>
       <img
         className="nav_logo"
-        src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"
+        src="https://.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"
         alt="Search Logo"
       />
 
-      {/* Antingen får den vara här så den hamnar i Nav eller som egen grej högst upp på sidan. Kan tas bort från App.js */}     
+      {/* Antingen får den vara här så den hamnar i Nav eller som egen grej högst upp på sidan. Kan tas bort från App.js */}
     </div>
   );
 }

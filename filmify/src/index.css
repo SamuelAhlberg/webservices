@@ -5,10 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(68, 16, 16);
 }
 
 .row {
-  background-color: white;
+  background-color: rgb(68, 16, 16);
   margin: 80px 20px 20px 20px;
   border-radius: 10px;
   position: relative;
@@ -61,4 +62,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.movie_description {
+  color: antiquewhite;
+}
+
+.movie_title {
+  color: antiquewhite;
+}
+
+.search_bar input {
+  background-color: antiquewhite;
+}
+.movie_info {
+  color: antiquewhite;
 }

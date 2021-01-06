@@ -3,12 +3,17 @@
   margin-right: 15%;
 }
 
+.row h2 {
+  color: white;
+}
+
 .row_posters {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px 0px 20px 0px;
   margin: 10px;
+  background-color: rgb(53, 2, 2);
 }
 
 .row_posters::-webkit-scrollbar {
@@ -64,8 +69,9 @@
 }
 
 .tillbaka {
-  margin: 40px;
+  margin: 20px;
   float: left;
   border-radius: 10px;
   padding: 10px;
+  background-color: antiquewhite;
 }

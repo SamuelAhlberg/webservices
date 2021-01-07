@@ -21,9 +21,13 @@
 .Track-information {
   flex-grow: 1;
   display: flex;
+  object-fit: contain;
   flex-direction: column;
   justify-content: center;
   height: 72px;
+}
+.Track-information:hover {
+  transform: scale(1.05);
 }
 
 .Track-information h3 {

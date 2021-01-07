@@ -20,6 +20,9 @@
   font-size: 1.55rem;
   color: #fff;
 }
+.Playlist input:hover {
+  transform: scale(1.05);
+}
 
 .Playlist-save {
   cursor: pointer;

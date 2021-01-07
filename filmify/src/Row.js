@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import axios from "./axios";
 import "./Row.css";
 import ReactDOM from "react-dom";
@@ -29,6 +29,7 @@ function Row({ title, fetchUrl }) {
     var title = movie.title;
     var movie_img = movie.poster_path;
     var description = movie.overview;
+    let playName = movie.title;
 
     //Visar filmen som har klickats på
     ReactDOM.render(
@@ -58,6 +59,10 @@ function Row({ title, fetchUrl }) {
           <div class="col-sm">
             <div class="spotify_box">
               <SpotifyApp />
+        //skicka in spotifyApp playlistName 
+              <div class="playListName"> {playName}
+              </div>
+     
             </div>
           </div>
         </div>

@@ -58,8 +58,7 @@ function Row({ title, fetchUrl }) {
           </div>
           <div class="col-sm">
             <div class="spotify_box">
-              <SpotifyApp />
-        //skicka in spotifyApp playlistName 
+              <SpotifyApp dataFromParent = {title}/>
               <div class="playListName"> {playName}
               </div>
      

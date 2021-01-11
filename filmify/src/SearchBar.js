@@ -11,6 +11,7 @@ import Header from "./Header";
 var base_url = "https://www.themoviedb.org/movie/";
 
 class SearchBar extends React.Component {
+
   viewMovie() {
     window.location.href = base_url + this.props.movie.id;
   }
@@ -79,7 +80,8 @@ function handleClick(movie) {
         </div>
         <div class="col-sm">
           <div class="spotify_box">
-            <SpotifyApp />
+            <SpotifyApp dataFromParent = {title}/>
+
             {title}{" "}
           </div>
         </div>

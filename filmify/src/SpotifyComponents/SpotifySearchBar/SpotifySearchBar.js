@@ -4,14 +4,14 @@ import "./SpotifySearchBar.css";
 class SpotifySearchBar extends React.Component {
   constructor(props) {
     super(props);
-    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleSongName = this.handleSongName.bind(this);
     this.search = this.search.bind(this);
     this.state = {
       term: "",
     };
   }
 
-  handleTermChange(event) {
+  handleSongName(event) {
     this.setState({ term: event.target.value });
   }
 
@@ -24,7 +24,7 @@ class SpotifySearchBar extends React.Component {
       <div className="SearchBar">
         <h2 className="playlist_header">Create A Playlist</h2>
         <input
-          onChange={this.handleTermChange}
+          onChange={this.handleSongName}
           placeholder="Enter A Song, Album, or Artist"
         />
         <button onClick={this.search} className="SearchButton">

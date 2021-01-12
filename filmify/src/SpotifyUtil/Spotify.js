@@ -46,7 +46,7 @@ const Spotify = {
                 }
             })
     },
-    savePlaylist(name, trackURIs) {
+    playListSave(name, trackURIs) {
         if(!name || !trackURIs.length) {
             return;
         } else {

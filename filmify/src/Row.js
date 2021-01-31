@@ -7,6 +7,7 @@ import SearchMovie from "./SearchMovie";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import Header from "./Header";
 import SpotifySearchBar from "./SpotifyComponents/SpotifySearchBar/SpotifySearchBar";
+import MovieMusicInfo from "./MovieMusicInfo";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -53,7 +54,8 @@ function Row({ title, fetchUrl }) {
               </div>
               <div class="info_box">
                 <div class="movie_title">{title}</div>
-                <div class="movie_description">{description}</div>
+                <div class="movie_description">
+                  <MovieMusicInfo soundtrackData = {title}/> </div>
               </div>
             </div>
           </div>

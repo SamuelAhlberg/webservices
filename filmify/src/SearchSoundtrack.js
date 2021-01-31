@@ -1,7 +1,5 @@
 import React from "react";
-import "./SpotifySearchBar.css";
-
-class SpotifySearchBar extends React.Component {
+class SearchSoundTrack extends React.Component {
   constructor(props) {
     super(props);
     this.handleSongName = this.handleSongName.bind(this);
@@ -19,24 +17,17 @@ class SpotifySearchBar extends React.Component {
   search() {
     this.props.onSearch(this.state.term);
   }
-  searchSoundtrack(){
-    this.props.onSearchSoundtrack();
-  }
+
 
   render() {
     return (
       <div className="SearchBar">
-        <h2 className="playlist_header">Create A Playlist</h2>
-        <input
-          onChange={this.handleSongName}
-          placeholder="Enter A Song, Album, or Artist"
-        />
+        <h2 className="playlist_header"></h2>
         <button onClick={this.search} className="SearchButton">
-          SEARCH
+          See Soundtrack
         </button>
-    
       </div>
     );
   }
 }
-export default SpotifySearchBar;
+export default SearchSoundTrack;

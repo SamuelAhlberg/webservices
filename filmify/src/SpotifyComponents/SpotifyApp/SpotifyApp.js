@@ -59,6 +59,11 @@ class SpotifyApp extends React.Component {
       this.setState({ searchResults: searchResults })
     );
   }
+  searchSoundtrack(term){
+    Spotify.search(this.props.dataFromParent).then((searchResults) =>
+    this.setState({searchResults: searchResults})
+    );
+}
 
   updatePlaylistName(name) {
     this.setState({ playlistName: name });
@@ -71,6 +76,7 @@ class SpotifyApp extends React.Component {
         <div className="App">
           <SpotifySearchBar 
           onSearch={this.search}
+      
           
           
            />

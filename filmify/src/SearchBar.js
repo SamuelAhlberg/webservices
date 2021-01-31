@@ -7,6 +7,7 @@ import Row from "./Row";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import "./index.css";
 import Header from "./Header";
+import MovieMusicInfo from "./MovieMusicInfo";
 
 var base_url = "https://www.themoviedb.org/movie/";
 
@@ -74,7 +75,7 @@ function handleClick(movie) {
             </div>
             <div class="info_box">
               <div class="movie_title">{title}</div>
-              <div class="movie_description">{description}</div>
+              <div class="movie_description"><MovieMusicInfo soundtrackData = {title} /></div>
             </div>
           </div>
         </div>

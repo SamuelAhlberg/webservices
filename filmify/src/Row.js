@@ -6,6 +6,7 @@ import requests from "./requests";
 import SearchMovie from "./SearchMovie";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import Header from "./Header";
+import SpotifySearchBar from "./SpotifyComponents/SpotifySearchBar/SpotifySearchBar";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
@@ -58,6 +59,7 @@ function Row({ title, fetchUrl }) {
           </div>
           <div class="col-sm">
             <div class="spotify_box">
+              
               <SpotifyApp dataFromParent = {title}/>
               <div class="playListName"> {playName}
               </div>

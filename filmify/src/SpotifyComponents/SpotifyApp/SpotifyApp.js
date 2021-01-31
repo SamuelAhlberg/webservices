@@ -55,7 +55,7 @@ class SpotifyApp extends React.Component {
   }
 
   search(term) {
-    Spotify.search(term).then((searchResults) =>
+    Spotify.search(this.props.dataFromParent).then((searchResults) =>
       this.setState({ searchResults: searchResults })
     );
   }

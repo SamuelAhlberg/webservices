@@ -16,7 +16,7 @@ class SpotifyTrack extends React.Component{
     removeSong(){
         this.props.onRemove(this.props.track);
     }
-    showAction(){
+    showTrackAction(){
         if(this.props.isRemoval){
             return <button className = "Track-action" onClick ={this.removeSong}>-</button>
         }else{
@@ -33,7 +33,7 @@ class SpotifyTrack extends React.Component{
                     <h3>{this.props.track.name}</h3>
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                 </div>
-           
+           {this.showTrackAction()}
             </div>
         );
     }

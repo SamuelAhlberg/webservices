@@ -3,6 +3,7 @@ import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import SpotifySoundTrackSearchResult from "./SpotifyComponents/SpotifySearchResult/SpotifySearchResult";
 import Spotify from "./SpotifyUtil/Spotify";
 import SearchSoundtrack from "./SearchSoundtrack";
+import SoundtrackSearchResult from "./SpotifyComponents/SpotifySearchResult/SoundtrackSearchResult";
 
 
 class MovieMusicInfo extends React.Component{
@@ -32,7 +33,7 @@ class MovieMusicInfo extends React.Component{
           
            />
             <div classname = "Soundtracks">
-            <SpotifySoundTrackSearchResult
+            <SoundtrackSearchResult
           
               searchResults={this.state.searchResults}
             />

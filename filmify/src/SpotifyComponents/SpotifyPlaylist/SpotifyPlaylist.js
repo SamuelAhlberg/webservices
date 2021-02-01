@@ -1,4 +1,5 @@
 import React from 'react';
+import SpotifySoundTrackList from '../SpotifyTrackList/SpotifySoundTrackList';
 import SpotifyTrackList from '../SpotifyTrackList/SpotifyTrackList';
 import './SpotifyPlayList.css'
 
@@ -18,6 +19,7 @@ class SpotifyPlaylist extends React.Component{
           <div className="Playlist">
               <input onChange={this.handleNameChange} defaultValue={this.props.playlistName}/>
               <SpotifyTrackList isRemoval={true} onRemove={this.props.onRemove} tracks={this.props.playlistTracks} />
+              <SpotifySoundTrackList isRemoval={true} onRemove={this.props.onRemove}tracks ={this.props.playlistTracks}/>
               <button onClick={this.props.onSave} className="Playlist-save">SAVE TO SPOTIFY</button>
           </div>
       );

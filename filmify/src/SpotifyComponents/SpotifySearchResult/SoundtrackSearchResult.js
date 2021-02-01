@@ -3,7 +3,7 @@ import SpotifySoundTrackList from "../SpotifyTrackList/SpotifySoundTrackList";
 import SpotifyTrackList from "../SpotifyTrackList/SpotifyTrackList";
 import "./SpotifySearchResult.css";
 
-class SpotifySoundTrackSearchResult extends React.Component {
+class SoundtrackSearchResult extends React.Component {
   render() {
     return (
       <div className="SearchResults">
@@ -15,4 +15,4 @@ class SpotifySoundTrackSearchResult extends React.Component {
     );
   }
 }
-export default SpotifySoundTrackSearchResult;
+export default SoundtrackSearchResult;

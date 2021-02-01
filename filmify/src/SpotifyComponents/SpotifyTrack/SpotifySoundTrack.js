@@ -10,17 +10,18 @@ class SpotifySoundTrack extends React.Component{
 
     }
 
+    
     addSong(){
         this.props.onAdd(this.props.track);
     }
     removeSong(){
         this.props.onRemove(this.props.track);
     }
-    showAction(){
+    showSoundAction(){
         if(this.props.isRemoval){
-            return <button className = "Track-action" onClick ={this.removeSong}>?</button>
+            return <button className = "Track-action" onClick ={this.removeSong}>+</button>
         }else{
-            return <button className= "Track-action" onClick = {this.addSong}></button>
+            return <button className= "Track-action" onClick = {this.addSong}>-</button>
         }
      /*   return this.props.isRemoval ? <button onClick = {this.removeSong}
         className={"Track-action"}>-</button> : <button onClick={this.addSong} className={"Track-action"}>+</button>;*/
@@ -33,7 +34,7 @@ class SpotifySoundTrack extends React.Component{
                     <h3>{this.props.track.name}</h3>
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                 </div>
-                {this.showAction()}
+               
             </div>
         );
     }

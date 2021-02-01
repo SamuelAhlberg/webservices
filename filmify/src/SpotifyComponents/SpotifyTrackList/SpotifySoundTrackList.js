@@ -5,7 +5,7 @@ import './SpotifyTrackList.css'
 class SpotifySoundTrackList extends React.Component{
     render() {
         return (
-            <div className="TrackList">
+            <div className="SoundTrackList">
                 {this.props.tracks.map(track => {
                     return <SpotifySoundTrack
                         track={track}

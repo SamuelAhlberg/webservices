@@ -76,8 +76,6 @@ class SpotifyApp extends React.Component {
         <div className="App">
           <SpotifySearchBar 
           onSearch={this.search}
-      
-          
           
            />
           <div className="App-playlist">

@@ -26,7 +26,7 @@ class SpotifySearchBar extends React.Component {
   render() {
     return (
       <div className="SearchBar">
-        <h2 className="playlist_header">Create A Playlist</h2>
+        <h2 className="playlist_header">Search for a Song, Album or Artist</h2>
         <input
           onChange={this.handleSongName}
           placeholder="Enter A Song, Album, or Artist"

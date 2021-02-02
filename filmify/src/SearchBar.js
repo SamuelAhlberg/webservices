@@ -60,7 +60,7 @@ function handleClick(movie) {
       <Header></Header>
       <SearchMovie title="Search Movie" />
       <button onClick={() => App()} class="tillbaka">
-        Tillbaka
+        Back
       </button>
 
       <div class="row">

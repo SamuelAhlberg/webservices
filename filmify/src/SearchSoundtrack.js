@@ -8,6 +8,9 @@ class SearchSoundTrack extends React.Component {
     this.state = {
       term: "",
     };
+    //Search for songs
+    this.search();
+    
   }
 
   handleSongName(event) {
@@ -23,9 +26,7 @@ class SearchSoundTrack extends React.Component {
     return (
       <div className="SearchBar">
         <h2 className="playlist_header"></h2>
-        <button onClick={this.search} className="SearchButton">
-          See Soundtrack
-        </button>
+        
       </div>
     );
   }

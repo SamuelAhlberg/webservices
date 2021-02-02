@@ -96,6 +96,7 @@ function handleClick(movie) {
 function App() {
   ReactDOM.render(
     <div className="App">
+      <Header></Header>
       <SearchMovie title="Search Movie" />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Popular" fetchUrl={requests.fetchPopular} />

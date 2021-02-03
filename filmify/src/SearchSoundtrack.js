@@ -24,8 +24,7 @@ class SearchSoundTrack extends React.Component {
 
   render() {
     return (
-      <div className="SearchBar">
-        <h2 className="playlist_header"></h2>
+      <div>
         
       </div>
     );

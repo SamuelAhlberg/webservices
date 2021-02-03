@@ -12,7 +12,7 @@ class SpotifySoundTrackList extends React.Component{
             return "No tracks found";
         }
         return (
-            <div className="SoundTrackList">
+            <div className="SoundTrackSearchResult">
                 {this.props.tracks.map(track => {
                     return <SpotifySoundTrack
                         track={track}

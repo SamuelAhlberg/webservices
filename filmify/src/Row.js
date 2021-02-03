@@ -63,8 +63,6 @@ function Row({ title, fetchUrl }) {
             <div class="spotify_box">
               
               <SpotifyApp dataFromParent = {title}/>
-              <div class="playListName"> {playName}
-              </div>
      
             </div>
           </div>
@@ -75,7 +73,7 @@ function Row({ title, fetchUrl }) {
   }
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <div className="row_posters">
         {movies.map((movie) => (
           <img

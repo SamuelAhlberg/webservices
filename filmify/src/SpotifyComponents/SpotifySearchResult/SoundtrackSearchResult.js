@@ -6,8 +6,8 @@ import "./SpotifySearchResult.css";
 class SoundtrackSearchResult extends React.Component {
   render() {
     return (
-      <div className="SearchResults">
-        <h2>Results</h2>
+      <div className="SoundtrackSearchResults">
+        <h2>Recommended Songs</h2>
         <SpotifySoundTrackList
           tracks={this.props.searchResults}
         />

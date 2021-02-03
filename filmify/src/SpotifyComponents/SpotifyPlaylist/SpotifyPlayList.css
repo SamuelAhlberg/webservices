@@ -7,8 +7,7 @@
   max-height: 450px;
   padding: 2.27rem 1.16rem;
   background-color: rgba(35, 35, 48, 0.7);
-  box-shadow: 0 4px 2px 2px #000000;
-  padding: 1rem;
+  border: solid black;
 }
 
 .Playlist input {

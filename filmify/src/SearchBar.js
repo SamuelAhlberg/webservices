@@ -52,13 +52,13 @@ class SearchBar extends React.Component {
 function handleClick(movie) {
   var title = movie.title;
   var movie_img = movie.poster_src;
-  var description = movie.overview;
+
 
   //Visar filmen som har klickats på
   ReactDOM.render(
     <div>
       <Header></Header>
-      <SearchMovie title="Search Movie" />
+      
       <button onClick={() => App()} class="tillbaka">
         Back
       </button>

@@ -1,6 +1,4 @@
 import React from "react";
-import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
-import SpotifySoundTrackSearchResult from "./SpotifyComponents/SpotifySearchResult/SpotifySearchResult";
 import Spotify from "./SpotifyUtil/Spotify";
 import SearchSoundtrack from "./SearchSoundtrack";
 import SoundtrackSearchResult from "./SpotifyComponents/SpotifySearchResult/SoundtrackSearchResult";

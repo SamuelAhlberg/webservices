@@ -6,7 +6,6 @@ import requests from "./requests";
 import SearchMovie from "./SearchMovie";
 import SpotifyApp from "./SpotifyComponents/SpotifyApp/SpotifyApp";
 import Header from "./Header";
-import SpotifySearchBar from "./SpotifyComponents/SpotifySearchBar/SpotifySearchBar";
 import MovieMusicInfo from "./MovieMusicInfo";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
@@ -30,8 +29,7 @@ function Row({ title, fetchUrl }) {
 
     var title = movie.title;
     var movie_img = movie.poster_path;
-    var description = movie.overview;
-    let playName = movie.title;
+    
 
     //Visar filmen som har klickats på
     ReactDOM.render(
